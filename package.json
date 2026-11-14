@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "rm -rf dist && mkdir dist && cp app-ads.txt dist/ && (cp index.html dist/ 2>/dev/null || true)",
+    "build": "rm -rf dist && mkdir dist && cp -R public/. dist/",
     "deploy": "npm run build && gh-pages -d dist"
   },
   "devDependencies": {
